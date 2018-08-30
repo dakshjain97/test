@@ -46,6 +46,8 @@ int main()
         node *xyzz=new node(temp,val);
         for(int i=0;i<10;i++)
             xyzz->childreferencenodeid[i]=NULL;
+        xyzz->data=temp;
+        xyzz->nodenumber=val;
         genroot->childreferencenodeid[k]=xyzz;
         k++;
         i++;
